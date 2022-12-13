@@ -1,0 +1,27 @@
+ 
+{
+    "user":
+                [
+            {"name":"Siva",
+            "location":"Bengaluru",
+            "likes":64,
+            "description": "Kick start your career",
+            "PostImage": "./images/10x.png",
+            "date": "13/11/1996"
+            },
+            {"name":"Neeraj",
+            "location":"Pune",
+            "likes":30,
+            "description": "Sample Description",
+            "PostImage": "./images/Nature.png",
+            "date": "13/11/1996"
+            },
+            {"name":"Rahul",
+            "location":"Hyderabad",
+            "likes":30,
+            "description": "Sample Description for Post",
+            "PostImage": "./images/Airplane.jpg",
+            "date": "13/11/1996"
+            }
+            ]
+}
