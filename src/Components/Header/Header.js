@@ -1,6 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Header.css';
+
+
 function Header() {
+ 
   return (
     <>
         <nav className='header'>
@@ -10,10 +14,14 @@ function Header() {
             <section className='Text'>
                <h1>Instaclone</h1>
             </section>
-
+           
             <section className='camera-icon'>
-                <img src={require('../../images/camera@2x.png')} alt='Camera'/>
+            <Link to="Form">
+                <img  src={require('../../images/camera@2x.png')} alt='Camera'/>
+            </Link>
             </section>
+            
+            
         </nav>
     </>
   )
