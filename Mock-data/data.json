@@ -22,6 +22,13 @@
             "description": "Sample Description for Post",
             "PostImage": "./images/Airplane.jpg",
             "date": "13/11/1996"
+            },
+            {"name":"Rohan",
+            "location":"Pune",
+            "likes":30,
+            "description": "Insta Post",
+            "PostImage": "./images/10x.png",
+            "date": "13/11/1996"
             }
             ]
 }
