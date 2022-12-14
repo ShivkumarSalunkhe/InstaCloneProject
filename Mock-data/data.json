@@ -1,7 +1,14 @@
  
 {
     "user":
-                [
+            [
+             {"name":"Rakesh",
+            "location":"Delhi",
+            "likes":30,
+            "description": "Collage Post",
+            "PostImage": "./images/10x.png",
+            "date": "13/11/1996"
+            },
             {"name":"Siva",
             "location":"Bengaluru",
             "likes":64,
