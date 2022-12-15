@@ -17,6 +17,7 @@ function Card({post}) {
             </section>
             <section className='card-img'>
                 <div>{post.PostImage}</div>
+                {/* <img src={require("../src/images/10x.png")} alt="kk" /> */}
             </section>
 
             <section className='card-actions'>
@@ -35,7 +36,7 @@ function Card({post}) {
               {post.likes} likes
             </section>
             <section className='description'>
-              {post.description}
+              {post.Description}
             </section>
       
             

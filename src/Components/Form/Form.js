@@ -41,7 +41,7 @@ function Form() {
     <form className='Form'>
     
     <div>
-        <input onChange={handleChange} type="file" name="PostImage" placeholder="Upload File Here"/>
+        <input onChange={handleChange} value={input.PostImage} type="file" name="PostImage" placeholder="Upload File Here"/>
     </div>
     <div className='name-location'>
     
