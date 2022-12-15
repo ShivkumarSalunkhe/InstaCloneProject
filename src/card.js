@@ -16,7 +16,7 @@ function Card({post}) {
                 </span>
             </section>
             <section className='card-img'>
-                <img src={require("" + post.PostImage)} alt='place'/>
+                <div>{post.PostImage}</div>
             </section>
 
             <section className='card-actions'>

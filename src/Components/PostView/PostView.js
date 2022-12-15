@@ -5,7 +5,7 @@ import Header from '../Header/Header'
 const PostView=()=> {
     const [posts, setPosts]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:3005/user").then((res)=>res.json()).then((data)=>{
+        fetch("/posts").then((res)=>res.json()).then((data)=>{
             setPosts(data)
         }).catch((err)=>{
             if(err){
