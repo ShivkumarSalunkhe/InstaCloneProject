@@ -27,7 +27,7 @@ function Form() {
             location:input.location,
             Description:input.Description
         }
-        axios.post("/create", newPost, config)
+        axios.post("https://instclonefrontend.onrender.com/create", newPost, config)
           console.log(newPost)
           
     }
