@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../Header/Header'
 import "./Form.css"
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 
 function Form() {
     const [input, setInput]= useState({
@@ -27,7 +27,6 @@ function Form() {
             location:input.location,
             Description:input.Description
         }
-  
         axios.post("/create", newPost, config)
           console.log(newPost)
           
@@ -38,7 +37,7 @@ function Form() {
     <Header/>
     <form className='Form'>
     
-    <div>
+    <div className='file'>
         <input onChange={(event)=>{setInput({...input, PostImage: event.target.files[0]})}} type="file" name="PostImage" placeholder="Upload File Here"/>
     </div>
     <div className='name-location'>
@@ -47,11 +46,16 @@ function Form() {
     
         <input onChange={(event)=>{setInput({...input, location: event.target.value})}} type="text" name="location" placeholder="location"/>
     </div>
+
         <textarea onChange={(event)=>{setInput({...input, Description: event.target.value})}} type="text" name="Description" placeholder="Describe yourself here" />
-    <div>
-          <button onClick={handleClick}>Upload</button>
-    </div>
-    
+        
+      <div>
+          <button onClick={handleClick}><Link to="/PostView">Post</Link></button>
+      </div>
+
+         
+
+     
     </form>
     </>
     

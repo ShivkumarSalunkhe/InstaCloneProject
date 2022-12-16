@@ -15,6 +15,8 @@ function App() {
           <Route path="/" element={<LandingPage/>}/>
           <Route path="/PostView" element={<PostView/>}/>
           <Route path="/PostView/Form" element={<Form/>}/>
+          <Route path="/PostView/Form/Form" element={<PostView/>}/>
+        
           
         </Routes>
       </BrowserRouter>

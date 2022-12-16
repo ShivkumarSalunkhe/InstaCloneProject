@@ -16,7 +16,7 @@ function Header() {
             </section>
            
             <section className='camera-icon'>
-            <Link to="Form">
+            <Link to="/PostView/Form">
                 <img  src={require('../../images/camera@2x.png')} alt='Camera'/>
             </Link>
             </section>

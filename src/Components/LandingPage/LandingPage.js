@@ -12,7 +12,9 @@ function LandingPage() {
             <div>
             <h1>10x Team</h1>
             <Link to="/PostView">
+            <div>
               <button>Enter</button>
+            </div>
             </Link>
             </div>         
         </div>

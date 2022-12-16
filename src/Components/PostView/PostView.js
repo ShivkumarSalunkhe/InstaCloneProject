@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../../card'
 import Header from '../Header/Header'
-
+import './PostView.css'
 
 const PostView=()=> {
     const [posts, setPosts]=useState([])
