@@ -6,7 +6,7 @@ import './PostView.css'
 const PostView=()=> {
     const [posts, setPosts]=useState([])
     useEffect(()=>{
-        fetch("/posts").then((res)=>res.json()).then((data)=>{
+        fetch("https://instclonefrontend.onrender.com/posts").then((res)=>res.json()).then((data)=>{
             setPosts(data)
         }).catch((err)=>{
             if(err){

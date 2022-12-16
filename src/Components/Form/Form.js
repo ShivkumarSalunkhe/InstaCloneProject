@@ -52,10 +52,6 @@ function Form() {
       <div>
           <button onClick={handleClick}><Link to="/PostView">Post</Link></button>
       </div>
-
-         
-
-     
     </form>
     </>
     
