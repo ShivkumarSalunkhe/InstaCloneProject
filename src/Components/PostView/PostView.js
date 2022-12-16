@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Card from '../../card'
 import Header from '../Header/Header'
 
+
 const PostView=()=> {
     const [posts, setPosts]=useState([])
     useEffect(()=>{
@@ -14,7 +15,7 @@ const PostView=()=> {
         })
     }, [])
   return (
-    <>
+    <div>
         <Header/>
         <div>
             {posts.map((post, i)=> {
@@ -23,7 +24,7 @@ const PostView=()=> {
                 )
             })}
         </div>
-    </>
+    </div>
   )
 }
 
