@@ -3,11 +3,8 @@ import Header from '../Header/Header'
 import "./Form.css"
 import axios from 'axios';
 
+
 function Form() {
-    
-
-
- 
     const [input, setInput]= useState({
         PostImage:"",
         name:"",
@@ -21,17 +18,6 @@ function Form() {
         "content-type": "multipart/form-data"
       }
     }
-    // const handleChange=(event)=>{
-    //     const {name, value} = event.target
-    //     setInput(prvInput=>{
-    //         return{
-    //             ...prvInput,
-    //             [name]: value
-
-    //         }
-    //     })
-    //   }
-
 
     const handleClick=(event)=>{
         event.preventDefault()
@@ -41,7 +27,7 @@ function Form() {
             location:input.location,
             Description:input.Description
         }
-      
+  
         axios.post("/create", newPost, config)
           console.log(newPost)
           
@@ -63,7 +49,7 @@ function Form() {
     </div>
         <textarea onChange={(event)=>{setInput({...input, Description: event.target.value})}} type="text" name="Description" placeholder="Describe yourself here" />
     <div>
-        <button onClick={handleClick}>Upload</button>
+          <button onClick={handleClick}>Upload</button>
     </div>
     
     </form>

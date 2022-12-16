@@ -37,9 +37,7 @@ function Card({post}) {
             <section className='description'>
               {post.Description}
             </section>
-      
-            
-        </section>
+           </section>
     </>
   )
 }

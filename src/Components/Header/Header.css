@@ -6,6 +6,7 @@
     margin: 20px;
     height: 100px;
     margin: 50px;
+    box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.19)
 }
 
 .camera-icon{
