@@ -1,11 +1,13 @@
 .header{
     display: flex;
-    border: 2px solid gray;
-    border-radius: 5px;
-    background-color: rgb(229, 231, 207);
-    margin: 20px;
+    border: 2px solid rgb(36, 80, 38);
+    border-radius: 10px;
+    background-color: #1c0d2093;
+    margin: 0px 100px 0px 100px;
+    
+ 
     height: 100px;
-    margin: 50px;
+
     box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.19)
 }
 .camera-icon:hover{
@@ -35,12 +37,10 @@
 }
 
 
-.Text{
-
-    font-size: 35px;
-    color: #006238;
-    align-self: center;
-    padding-left: 10px;
+.Text img{
+    height: 50px;
+    margin: 30px;
+  
     
 
 }

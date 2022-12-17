@@ -9,7 +9,7 @@ import Form from './Components/Form/Form';
 
 function App() {
   return (
-    <>
+    <div className='App'>
        <BrowserRouter>
       <Routes>
           <Route path="/" element={<LandingPage/>}/>
@@ -20,7 +20,7 @@ function App() {
           
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

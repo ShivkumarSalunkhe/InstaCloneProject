@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import Header from '../Header/Header'
 import "./Form.css"
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Form() {
+    const History = useNavigate()
     const [input, setInput]= useState({
         PostImage:"",
         name:"",
@@ -29,11 +30,11 @@ function Form() {
         }
         axios.post("https://instclonefrontend.onrender.com/create", newPost, config)
           console.log(newPost)
-          
+          History("/PostView")
     }
     
   return ( 
-    <>
+    <div className='Form-bg'>
     <Header/>
     <form className='Form'>
     
@@ -50,10 +51,11 @@ function Form() {
         <textarea onChange={(event)=>{setInput({...input, Description: event.target.value})}} type="text" name="Description" placeholder="Describe yourself here" />
         
       <div>
-          <button onClick={handleClick}><Link to="/PostView">Post</Link></button>
+          {/* <button onClick={handleClick}><Link to="/PostView">Post</Link></button> */}
+          <button onClick={handleClick}>Post</button>
       </div>
     </form>
-    </>
+    </div>
     
     
   )

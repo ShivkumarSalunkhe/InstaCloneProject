@@ -15,7 +15,7 @@ const PostView=()=> {
         })
     }, [])
   return (
-    <div>
+    <div className='PostView'>
         <Header/>
         <div>
             {posts.map((post, i)=> {

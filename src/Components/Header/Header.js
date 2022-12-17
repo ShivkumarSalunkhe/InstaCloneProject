@@ -9,15 +9,15 @@ function Header() {
     <>
         <nav className='header'>
             <section className='logo'>
-            <img src={require('../../images/icon@2x.png')} alt='Logo'/>
+            <img src={require('../../images/Instagram-Icon.png')} alt='Logo'/>
             </section>
             <section className='Text'>
-               <h1>Instaclone</h1>
+            <img src={require('../../images/NL0hPV-L09m.png')} alt='Logo'/>
             </section>
            
             <section className='camera-icon'>
             <Link to="/PostView/Form">
-                <img  src={require('../../images/camera@2x.png')} alt='Camera'/>
+                <img  src={require('../../images/1280px-Line-style-icons-camera.svg.png')} alt='Camera'/>
             </Link>
             </section>
             
